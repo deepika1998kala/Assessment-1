@@ -1,0 +1,188 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Hero Section */
+
+.hero-section {
+  width: 100%;
+  min-height: 1080px;  /* use min-height for responsiveness */
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #666;
+  font-style: "instrument sans"
+}
+
+.hero-cta {
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-cta:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  .hero-section {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+
+  }
+  .hero-cta {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Navbar Styles */
+/* Existing navbar styles */
+.navbar {
+  width: 100%;
+  max-width: 1920px;
+  height: 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFFBFB59;
+  opacity: 1;
+  box-sizing: border-box;
+  position: relative; /* for mobile menu overlay */
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Links container */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+/* Hamburger icon button - hidden on large screens */
+.navbar-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+}
+
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* Mobile / small screen styles */
+@media (max-width: 720px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 103px; /* below navbar */
+    left: 0;
+    width: 100%;
+    background-color: #FFFBFB59;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+  }
+}
+
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.App-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* adjust based on design */
+  background-color: #f9f9f9; /* or the design background */
+}
+
+.App-header {
+  padding: 1rem 2rem;
+  background: #fff; /* or design colour */
+}
+
+.App-footer {
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
